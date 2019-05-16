@@ -7,16 +7,16 @@ namespace _3.StudentAndWorkers
 {
     public class Worker : Human
     {
-        public Worker(string firstName, string lastName, double weekSalary, double workHoursperDay) : base(firstName, lastName
+        public Worker(string firstName, string lastName, double weekSalary, int workHoursperDay) : base(firstName, lastName
             )
         {
             this.WeekSalary = weekSalary;
-            this.WorkHoursPerDay = WorkHoursPerDay;
+            this.WorkHoursPerDay = workHoursperDay;
         }
 
         public double WeekSalary { get; set; }
 
-        public double WorkHoursPerDay { get; set; }
+        public int WorkHoursPerDay { get; set; }
 
         
         
